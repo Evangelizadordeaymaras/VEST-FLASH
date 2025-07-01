@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Creepster', cursive;
+  background-color: #000;
+  color: white;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.rojo {
+  color: red;
+}
+
+.negro {
+  color: black;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.buscador {
+  width: 60%;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: darkred;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.producto {
+  background-color: #111;
+  border: 2px solid red;
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.producto button {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: darkred;
+}
+
+.carrito-pestana {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  width: 300px;
+  height: calc(100% - 60px);
+  background: #111;
+  color: white;
+  border-left: 2px solid red;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.carrito-pestana h2 {
+  color: red;
+  margin-top: 0;
+}
+
+.carrito-pestana ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito-pestana li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VESTÍ FLASH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1><span class="rojo">VESTÍ</span> <span class="negro">FLASH</span></h1>
+    <input type="text" placeholder="Buscar..." class="buscador">
+    <nav>
+      <button>Inicio</button>
+      <button>Productos</button>
+      <button onclick="verCarrito()">Ver Carrito</button>
+      <button onclick="vaciarCarrito()">Vaciar</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="productos">
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/8b/6e/fa/8b6efa3b1187dc027dec1a410ba6c5b9.jpg" alt="Vestido Encaje Negro" />
+        <h2>Vestido Encaje Negro</h2>
+        <p>Vestido elegante de encaje con detalles clásicos. Precio: S/ 120</p>
+        <button onclick="carritoAgregar('Vestido Encaje Negro', 120)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/05/33/aa/0533aa3ee7b179150880dae77daf2d23.jpg" alt="Vestido Rojo Fuego" />
+        <h2>Vestido Rojo Fuego</h2>
+        <p>Ideal para ocasiones especiales. Precio: S/ 150</p>
+        <button onclick="carritoAgregar('Vestido Rojo Fuego', 150)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/50/c7/1e/50c71ed9775d688ceadf1030b18bbe02.jpg" alt="Vestido Largo Elegante" />
+        <h2>Vestido Largo Elegante</h2>
+        <p>Diseño largo para eventos nocturnos. Precio: S/ 180</p>
+        <button onclick="carritoAgregar('Vestido Largo Elegante', 180)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/6d/94/3b/6d943bf293e97c7ded2a0a888f1e4d82.jpg" alt="Vestido Urbano Chic" />
+        <h2>Vestido Urbano Chic</h2>
+        <p>Casual y cómodo para todos los días. Precio: S/ 95</p>
+        <button onclick="carritoAgregar('Vestido Urbano Chic', 95)">Añadir al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="carrito-pestana" class="carrito-pestana">
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito-lista"></ul>
+    <p id="carrito-total"></p>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
